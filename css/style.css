@@ -1,1 +1,76 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.navbar-straight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 80px;
+}
+
+.navbar__mobile {
+  text-align: right;
+}
+
+.navbar__phone {
+  display: block;
+  font-size: 19px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.navbar__email {
+  display: block;
+  font-style: 14px;
+  text-decoration: none;
+}
+
+.menu {
+  margin-left: 300px;
+  width: 650px;
+}
+
+.menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__link-text {
+  text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 200px;
+  width: 200px;
+  height: 350px;
+  border: 1px solid black;
+}
+
+.navbar__button {
+  text-transform: uppercase;
+  padding: 17px 22px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */
