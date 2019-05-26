@@ -4,7 +4,7 @@
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1140px;
   margin: auto;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .menu {
-  margin-left: 300px;
+  margin-left: 265px;
   width: 650px;
 }
 
@@ -61,8 +61,8 @@
 
 .logo {
   position: absolute;
-  margin-top: 40px;
-  margin-left: 200px;
+  top: 40px;
+  left: 150px;
   width: 200px;
   height: 350px;
   border: 1px solid black;
