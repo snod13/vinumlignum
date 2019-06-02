@@ -36,14 +36,14 @@
 			this.support2d		= Modernizr.csstransforms;
 			this.supportTrans	= Modernizr.csstransitions;
 			
-			this.$wrapper		= this.$el.find('.dg-wrapper');
+			this.$wrapper		= this.$el.find('.gallery-wrapper');
 			
 			this.$items			= this.$wrapper.children();
 			this.itemsCount		= this.$items.length;
 			
 			this.$nav			= this.$el.find('nav');
-			this.$navPrev		= this.$nav.find('.dg-prev');
-			this.$navNext		= this.$nav.find('.dg-next');
+			this.$navPrev		= this.$nav.find('.gallery-prev');
+			this.$navNext		= this.$nav.find('.gallery-next');
 			
 			// minimum of 3 items
 			if( this.itemsCount < 3 ) {
@@ -154,12 +154,12 @@
 			this.$currentItm.css( currentCSS || {} ).css({
 				'opacity'	: 1,
 				'visibility': 'visible'
-			}).addClass('dg-center');
+			}).addClass('gallery-center');
 			
 		},
 		_setItems			: function() {
 			
-			this.$items.removeClass('dg-center');
+			this.$items.removeClass('gallery-center');
 			
 			this.$currentItm	= this.$items.eq( this.current );
 			this.$leftItm		= ( this.current === 0 ) ? this.$items.eq( this.itemsCount - 1 ) : this.$items.eq( this.current - 1 );
@@ -220,8 +220,8 @@
 			
 			this.$wrapper.on( 'webkitTransitionEnd.gallery transitionend.gallery OTransitionEnd.gallery', function( event ) {
 				
-				_self.$currentItm.addClass('dg-center');
-				_self.$items.removeClass('dg-transition');
+				_self.$currentItm.addClass('gallery-center');
+				_self.$items.removeClass('gallery-transition');
 				_self.isAnim	= false;
 				
 			});
@@ -388,24 +388,24 @@
 					this.current	= this.$rightItm.index();
 					
 					// current item moves left
-					this.$currentItm.addClass('dg-transition').css( this._getCoordinates('left') );
+					this.$currentItm.addClass('gallery-transition').css( this._getCoordinates('left') );
 					
 					// right item moves to the center
-					this.$rightItm.addClass('dg-transition').css( this._getCoordinates('center') );	
+					this.$rightItm.addClass('gallery-transition').css( this._getCoordinates('center') );	
 					
 					// next item moves to the right
 					if( this.$nextItm ) {
 						
 						// left item moves out
-						this.$leftItm.addClass('dg-transition').css( this._getCoordinates('outleft') );
+						this.$leftItm.addClass('gallery-transition').css( this._getCoordinates('outleft') );
 						
-						this.$nextItm.addClass('dg-transition').css( this._getCoordinates('right') );
+						this.$nextItm.addClass('gallery-transition').css( this._getCoordinates('right') );
 						
 					}
 					else {
 					
 						// left item moves right
-						this.$leftItm.addClass('dg-transition').css( this._getCoordinates('right') );
+						this.$leftItm.addClass('gallery-transition').css( this._getCoordinates('right') );
 					
 					}
 					break;
@@ -415,24 +415,24 @@
 					this.current	= this.$leftItm.index();
 					
 					// current item moves right
-					this.$currentItm.addClass('dg-transition').css( this._getCoordinates('right') );
+					this.$currentItm.addClass('gallery-transition').css( this._getCoordinates('right') );
 					
 					// left item moves to the center
-					this.$leftItm.addClass('dg-transition').css( this._getCoordinates('center') );
+					this.$leftItm.addClass('gallery-transition').css( this._getCoordinates('center') );
 					
 					// prev item moves to the left
 					if( this.$prevItm ) {
 						
 						// right item moves out
-						this.$rightItm.addClass('dg-transition').css( this._getCoordinates('outright') );
+						this.$rightItm.addClass('gallery-transition').css( this._getCoordinates('outright') );
 					
-						this.$prevItm.addClass('dg-transition').css( this._getCoordinates('left') );
+						this.$prevItm.addClass('gallery-transition').css( this._getCoordinates('left') );
 						
 					}
 					else {
 					
 						// right item moves left
-						this.$rightItm.addClass('dg-transition').css( this._getCoordinates('left') );
+						this.$rightItm.addClass('gallery-transition').css( this._getCoordinates('left') );
 					
 					}
 					break;	
@@ -442,7 +442,7 @@
 			this._setItems();
 			
 			if( !this.supportTrans )
-				this.$currentItm.addClass('dg-center');
+				this.$currentItm.addClass('gallery-center');
 			
 		},
 		_startSlideshow		: function() {
