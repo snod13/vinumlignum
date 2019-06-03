@@ -8,6 +8,24 @@
   margin: auto;
 }
 
+@font-face {
+  font-family: 'MoolBoran V2';
+  src: url("../fonts/MoolBoran V2.eot");
+  src: url("../fonts/MoolBoran V2.eot?#iefix") format("embedded-opentype"), url("../fonts/MoolBoran V2.woff") format("woff"), url("../fonts/MoolBoran V2.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Semibold';
+  src: url("../fonts/SourceSansPro-SemiBold.eot");
+  src: url("../fonts/SourceSansPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-SemiBold.woff") format("woff"), url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Source Sans Pro Semibold', sans-serif;
+}
+
 .navbar-straight {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,33 +87,22 @@
   border: 1px solid black;
 }
 
-@font-face {
-  font-family: 'MoolBoran V2';
-  src: url("../fonts/MoolBoran V2.eot");
-  src: url("../fonts/MoolBoran V2.eot?#iefix") format("embedded-opentype"), url("../fonts/MoolBoran V2.woff") format("woff"), url("../fonts/MoolBoran V2.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Source Sans Pro Semibold';
-  src: url("../fonts/SourceSansPro-SemiBold.eot");
-  src: url("../fonts/SourceSansPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-SemiBold.woff") format("woff"), url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  font-family: 'Source Sans Pro Semibold', sans-serif;
+.hero {
+  background: #32002A url("../img/fon.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 17px;
 }
 
 .gallery-container {
   width: 100%;
-  height: 370px;
+  height: 400px;
   position: relative;
 }
 
 .gallery-wrapper {
-  width: 481px;
-  height: 261px;
+  width: 350px;
+  height: auto;
   margin: 0 auto;
   position: relative;
   -webkit-transform-style: preserve-3d;
@@ -107,8 +114,8 @@ body {
 }
 
 .gallery-wrapper img {
-  width: 482px;
-  height: 261px;
+  width: 100%;
+  height: auto;
   display: block;
   position: absolute;
   left: 0;
