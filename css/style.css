@@ -4,7 +4,7 @@
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -81,17 +81,39 @@ body {
   position: absolute;
   z-index: 10;
   top: 40px;
-  left: 150px;
-  width: 200px;
-  height: 350px;
-  border: 1px solid black;
+  left: 100px;
+  width: 235px;
+  height: 370px;
+  border: 3px solid black;
+}
+
+.logo__img {
+  position: relative;
+  width: 235px;
+  height: 370px;
 }
 
 .hero {
-  background: #32002A url("../img/fon.jpg") no-repeat center;
+  background-blend-mode: multiply;
+  background-image: url("../img/fon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 120px;
-  padding-bottom: 17px;
+  background-color: rgba(28, 29, 35, 0.4);
+  padding-top: 345px;
+  padding-bottom: 70px;
+}
+
+.hero__title {
+  color: #fff;
+}
+
+.hero__subtitle {
+  color: #fff;
+}
+
+.hero__subtitle-list {
+  list-style-type: none;
 }
 
 .gallery-container {

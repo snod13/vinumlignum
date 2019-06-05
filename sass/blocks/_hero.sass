@@ -1,5 +1,15 @@
 .hero
-  background: $wine-block url('../img/fon.jpg') no-repeat center
+  background-blend-mode: multiply
+  background-image: url('../img/fon.jpg')
+  background-position: center
+  background-repeat: no-repeat
   background-size: cover
-  padding-top: 120px
-  padding-bottom: 17px
+  background-color: rgba(28, 29, 35, 0.4)
+  padding-top: 345px
+  padding-bottom: 70px
+  &__title
+    color: $light-text
+  &__subtitle
+    color: $light-text
+    &-list
+      list-style-type: none
