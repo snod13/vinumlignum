@@ -4,7 +4,7 @@
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1140px;
   margin: auto;
 }
 
@@ -18,12 +18,16 @@
   font-family: 'Source Sans Pro Semibold';
   src: url("../fonts/SourceSansPro-SemiBold.eot");
   src: url("../fonts/SourceSansPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-SemiBold.woff") format("woff"), url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 body {
   font-family: 'Source Sans Pro Semibold', sans-serif;
+}
+
+.navbar {
+  background-color: rgba(124, 30, 59, 0.6);
+  position: absolute;
+  width: 100%;
 }
 
 .navbar-straight {
@@ -36,7 +40,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 80px;
+  min-height: 90px;
 }
 
 .navbar__mobile {
@@ -45,19 +49,22 @@ body {
 
 .navbar__phone {
   display: block;
-  font-size: 19px;
+  font-size: 20px;
   margin-bottom: 5px;
-  text-decoration: none;
 }
 
 .navbar__email {
   display: block;
-  font-style: 14px;
+  font-size: 20px;
+}
+
+.navbar__text {
   text-decoration: none;
+  color: #fff;
 }
 
 .menu {
-  margin-left: 265px;
+  margin-left: 245px;
   width: 650px;
 }
 
@@ -74,23 +81,9 @@ body {
 }
 
 .menu__link-text {
+  font-size: 20px;
   text-decoration: none;
-}
-
-.logo {
-  position: absolute;
-  z-index: 10;
-  top: 40px;
-  left: 100px;
-  width: 235px;
-  height: 370px;
-  border: 3px solid black;
-}
-
-.logo__img {
-  position: relative;
-  width: 235px;
-  height: 370px;
+  color: #fff;
 }
 
 .hero {
@@ -100,20 +93,53 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(28, 29, 35, 0.4);
-  padding-top: 345px;
+  padding-top: 235px;
   padding-bottom: 70px;
 }
 
-.hero__title {
+.hero__name {
+  font-family: 'MoolBoran V2', sans-serif;
+  font-size: 130px;
   color: #fff;
+  font-weight: 100;
+  padding-left: 230px;
+  margin-bottom: 50px;
+  margin-top: -60px;
+}
+
+.hero__title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 900;
+  line-height: 65px;
+}
+
+.hero__subtitle-list {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 .hero__subtitle {
+  line-height: 40px;
+  font-size: 40px;
   color: #fff;
 }
 
 .hero__subtitle-list {
   list-style-type: none;
+}
+
+.logo {
+  position: absolute;
+  z-index: 10;
+  top: 40px;
+  width: 190px;
+  height: 310px;
+  background-image: url("../img/logo.svg");
+  background-size: contain;
+  background-position: center;
 }
 
 .gallery-container {

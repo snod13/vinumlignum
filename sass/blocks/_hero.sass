@@ -5,11 +5,38 @@
   background-repeat: no-repeat
   background-size: cover
   background-color: rgba(28, 29, 35, 0.4)
-  padding-top: 345px
+  padding-top: 235px
   padding-bottom: 70px
-  &__title
+  &__name
+    +mainname
+    font-size: 130px
     color: $light-text
+    font-weight: 100
+    padding-left: 230px
+    margin-bottom: 50px
+    margin-top: -60px
+  &__title
+    margin-top: 10px
+    margin-bottom: 20px
+    font-size: 70px
+    color: $light-text
+    font-weight: 900
+    line-height: 65px
+  &__subtitle-list
+    padding-inline-start: 0px
   &__subtitle
+    line-height: 40px
+    font-size: 40px
     color: $light-text
     &-list
       list-style-type: none
+
+.logo
+  position: absolute
+  z-index: 10
+  top: 40px
+  width: 190px
+  height: 310px
+  background-image: url('../img/logo.svg')
+  background-size: contain
+  background-position: center
