@@ -99,16 +99,15 @@ body {
 
 .hero__name {
   font-family: 'MoolBoran V2', sans-serif;
-  font-size: 130px;
+  font-size: 110px;
   color: #fff;
   font-weight: 100;
   padding-left: 230px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   margin-top: -60px;
 }
 
 .hero__title {
-  margin-top: 10px;
   margin-bottom: 20px;
   font-size: 70px;
   color: #fff;
@@ -119,16 +118,26 @@ body {
 .hero__subtitle-list {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
+  padding-bottom: 45px;
 }
 
 .hero__subtitle {
   line-height: 40px;
-  font-size: 40px;
+  font-size: 34px;
   color: #fff;
 }
 
 .hero__subtitle-list {
   list-style-type: none;
+}
+
+.hero__button {
+  border-radius: 10px;
+  padding: 15px 40px;
+  background: #680035;
+  color: #fff;
+  font-size: 34px;
+  text-decoration: none;
 }
 
 .logo {
