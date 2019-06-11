@@ -118,12 +118,12 @@ body {
 .hero__subtitle-list {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
-  padding-bottom: 45px;
+  padding-bottom: 30px;
 }
 
 .hero__subtitle {
   line-height: 40px;
-  font-size: 34px;
+  font-size: 30px;
   color: #fff;
 }
 
@@ -134,10 +134,12 @@ body {
 .hero__button {
   border-radius: 10px;
   padding: 15px 40px;
-  background: #680035;
+  background: #7E012E;
   color: #fff;
   font-size: 34px;
   text-decoration: none;
+  -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
 .logo {
@@ -151,10 +153,39 @@ body {
   background-position: center;
 }
 
+.section__dark {
+  background-color: #470128;
+}
+
+.triangle {
+  position: absolute;
+  right: 10%;
+  width: 300px;
+}
+
+.triangle__form {
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-top: 150px solid #7E012E;
+}
+
+.container__name {
+  position: absolute;
+  margin-top: 15px;
+  right: 11%;
+  color: #fff;
+  font-size: 35px;
+}
+
+.blk-gallery {
+  padding-bottom: 170px;
+}
+
 .gallery-container {
   width: 100%;
   height: 400px;
   position: relative;
+  top: 120px;
 }
 
 .gallery-wrapper {
@@ -177,8 +208,9 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  border: 10px solid #F4E9D1;
+  -webkit-box-shadow: 0px 10px 20px rgba(244, 233, 209, 0.8);
+          box-shadow: 0px 10px 20px rgba(244, 233, 209, 0.8);
   cursor: pointer;
 }
 
@@ -198,7 +230,7 @@ body {
 .gallery-container nav {
   width: 58px;
   position: absolute;
-  bottom: 40px;
+  bottom: 0px;
   left: 50%;
   margin-left: -29px;
 }
@@ -223,7 +255,7 @@ body {
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0;

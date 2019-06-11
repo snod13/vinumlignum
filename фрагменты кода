@@ -1,46 +1,44 @@
-<div class="container1">
-  <section class="section">
-    О Нас
-  </section>
-  <!-- /.section -->
-  <section class="section">Галерея
+    <section class="section-light">
+    <div class="container">
+      О Нас
+    </div>
+  <!-- /.container -->
+    </section>
+    <!-- /.section -->
+    <section class="container__section-dark">Галерея
       <div id="gallery-container" class="gallery-container">
         <div class="gallery-wrapper">
-      	  <img src="img/1.jpg" alt="Тут картинка 1" class="gallery-img">
-      		<img src="img/2.jpg" alt="Тут 2" class="gallery-img">
+          <img src="img/1.jpg" alt="Тут картинка 1" class="gallery-img">
+          <img src="img/2.jpg" alt="Тут 2" class="gallery-img">
           <img src="img/3.jpg" alt="Тут 3" class="gallery-img">
           <img src="img/5.jpg" alt="Тут 5" class="gallery-img">
           <img src="img/4.jpg" alt="Тут 4" class="gallery-img">
-      	</div>
-      	<nav>
-      		<span class="gallery-prev">&lt;</span>
-      		<span class="gallery-next">&gt;</span>
-      	</nav>
+        </div>
+        <nav>
+          <span class="gallery-prev">&lt;</span>
+          <span class="gallery-next">&gt;</span>
+        </nav>
       </div>
-    <!-- /.gallery-container -->
-  </section>
-  <!-- /.section -->
-  <section class="section">F.A.Q.</section>
-  <!-- /.section -->
-  <section class="section">Отзывы</section>
-  <!-- /.section -->
-  <section class="section">Заявка
-    <form action="send.php" method="POST" class="order-form">
-      Ваше имя <input type="text" name="first_name"><br>
-      Email: <input type="text" name="email" required placeholder="Обязательное поле"><br>
-      Номер телефона: <input type="text" name="phone"><br>
-      Сообщение:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-      <input type="submit" name="submit" value="Submit">
-    </form>
-    <!-- /.order-form -->
-  </section>
-  <!-- /.section -->
-  <section class="section">Контакты с текстом что-то не то</section>
-  <!-- /.section -->
-  </div>
-  <!-- /.container -->
+      <!-- /.gallery-container -->
+    </section>
+    <!-- /.section -->
+    <section class="container__section-light">F.A.Q.</section>
+    <!-- /.section -->
+    <section class="container__section-dark">Отзывы</section>
+    <!-- /.section -->
+    <section class="container__section-light">Заявка
+      <form action="send.php" method="POST" class="order-form">
+        Ваше имя <input type="text" name="first_name"><br>
+        Email: <input type="text" name="email" required placeholder="Обязательное поле"><br>
+        Номер телефона: <input type="text" name="phone"><br>
+        Сообщение:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+        <input type="submit" name="submit" value="Submit">
+      </form>
+      <!-- /.order-form -->
+    </section>
+    <!-- /.section -->
   <footer class="footer">
-    <div class="container">Подвал</div>
+    <div class="container">Будьте с нами на связи</div>
   </footer>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="/js/popup_img.js"></script>
