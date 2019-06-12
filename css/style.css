@@ -22,6 +22,7 @@
 
 body {
   font-family: 'Source Sans Pro Semibold', sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -157,16 +158,20 @@ body {
   background-color: #470128;
 }
 
+.section__light {
+  background-color: #F4E9D1;
+}
+
 .triangle {
   position: absolute;
-  right: 10%;
+  right: 15%;
   width: 300px;
 }
 
 .triangle__form {
-  border-left: 300px solid transparent;
-  border-right: 300px solid transparent;
-  border-top: 150px solid #7E012E;
+  border-left: 400px solid transparent;
+  border-right: 400px solid transparent;
+  border-top: 170px solid #7E012E;
 }
 
 .container__name {
@@ -177,6 +182,26 @@ body {
   font-size: 35px;
 }
 
+.container__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  height: 85px;
+  color: #7E012E;
+  font-size: 60px;
+}
+
+.container__title-name {
+  font-family: 'MoolBoran V2', sans-serif;
+  font-size: 80px;
+  font-weight: 100;
+}
+
+.container__text {
+  font-size: 30px;
+  margin-top: 0;
+}
+
 .blk-gallery {
   padding-bottom: 170px;
 }
@@ -185,7 +210,7 @@ body {
   width: 100%;
   height: 400px;
   position: relative;
-  top: 120px;
+  top: 140px;
 }
 
 .gallery-wrapper {

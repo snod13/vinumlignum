@@ -16,11 +16,11 @@
         <div class="navbar-straight">
           <div class="menu">
             <div class="menu__link">
-              <a href="#" class="menu__link-text">О Компании</a>
-              <a href="#" class="menu__link-text">Галерея</a>
-              <a href="#" class="menu__link-text">F.A.Q.</a>
-              <a href="#" class="menu__link-text">Отзывы</a>
-              <a href="#" class="menu__link-text">Контакты</a>
+              <a href="#about" class="menu__link-text">О Компании</a>
+              <a href="#gallery" class="menu__link-text">Галерея</a>
+              <a href="#faq" class="menu__link-text">F.A.Q.</a>
+              <a href="#reviews" class="menu__link-text">Отзывы</a>
+              <a href="#contacts" class="menu__link-text">Контакты</a>
             </div>
           </div>
           <!-- /.menu -->
@@ -65,28 +65,43 @@
           <!-- /.hero__subtitle-list -->
         </span>
         <!-- /.hero__subtitle -->
-        <a class="hero__button" href="#">Оставить заявку</a>
+        <a class="hero__button" href="#order">Оставить заявку</a>
       </div>
       <!-- /.container -->
     </div>
     <!-- /.hero -->
   </header>
   <!-- /.header -->
-  <section class="section">
+  <section id="about" class="section">
     <div class="section__light">
+      <div class="triangle">
+        <div class="triangle__form"></div>
+      </div>
       <div class="container">
-        О Нас
+        <h2 class="container__name">О Компании</h2>
+        <h1 class="container__title">Компания <span class="container__title-name">&laquo;VINUM LIGNUM&raquo;</span></h1>
+        <p class="container__text">
+          специализируется на производстве декоративной<br>
+          деревянной упаковки для вина и изготовлении сервировочных<br>
+          аксессуаров к винопитию.
+        </p>
+        <!-- /.container__text -->
+        <img src="img/qualities/1.svg" alt="" class="container__img-qualities">
+        <img src="img/qualities/2.svg" alt="" class="container__img-qualities">
+        <img src="img/qualities/3.svg" alt="" class="container__img-qualities">
+        <img src="img/qualities/4.svg" alt="" class="container__img-qualities">
+        <img src="img/qualities/5.svg" alt="" class="container__img-qualities">
+        <img src="img/qualities/6.svg" alt="" class="container__img-qualities">
       </div>
       <!-- /.container -->
     </div>
     <!--/.section__light-->
   </section>
   <!-- /.section -->
-  <section class="section">
+  <section id="gallery" class="section">
     <div class="section__dark blk-gallery">
       <div class="triangle">
-        <div class="triangle__form">
-        </div>
+        <div class="triangle__form"></div>
       </div>
       <div class="container">
         <h2 class="container__name">Галерея</h2>
@@ -110,7 +125,7 @@
     <!-- /.section__dark -->
   </section>
   <!-- /.section -->
-  <section class="section">
+  <section id="faq" class="section">
     <div class="section__light">
       <div class="container">
         F.A.Q.
@@ -120,7 +135,7 @@
     <!-- /.section__light -->
   </section>
   <!-- /.section -->
-  <section class="section">
+  <section id="reviews" class="section">
     <div class="section__dark">
       <div class="container">
         Отзывы
@@ -130,7 +145,7 @@
     <!-- /.section__dark -->
   </section>
   <!-- /.section -->
-  <section class="section">
+  <section id="order" class="section">
     <div class="section__light">
       <div class="container">
         Заявка
@@ -148,7 +163,7 @@
     <!-- /.section__light -->
   </section>
   <!-- /.section -->
-  <footer class="footer">
+  <footer id="contacts" class="footer">
     <div class="container">Будьте с нами на связи</div>
   </footer>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

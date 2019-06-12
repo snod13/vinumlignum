@@ -1,15 +1,16 @@
 .section
   &__dark
     background-color: $dark-color
+  &__light
+    background-color: $light-color
 .triangle
   position: absolute
-  right: 10%
+  right: 15%
   width: 300px
-  
   &__form
-	  border-left: 300px solid transparent
-	  border-right: 300px solid transparent
-	  border-top: 150px solid $light-wine
+	  border-left: 400px solid transparent
+	  border-right: 400px solid transparent
+	  border-top: 170px solid $light-wine
 .container
   &__name
     position: absolute
@@ -17,6 +18,23 @@
     right: 11%
     color: $light-text
     font-size: 35px
+  &__title
+    margin-top: 0
+    margin-bottom: 0
+    padding-top: 15px
+    height: 85px
+    color: $light-wine
+    font-size: 60px
+    &-name
+      +mainname
+      font-size: 80px
+      font-weight: 100
+  &__text
+    font-size: 30px
+    margin-top: 0
+  &__img-qualities
+    height: 100px
+    width: auto
 
 .blk-gallery
   padding-bottom: 170px
