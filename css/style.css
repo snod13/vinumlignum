@@ -177,7 +177,7 @@ body {
 .container__name {
   position: absolute;
   margin-top: 15px;
-  right: 11%;
+  right: 10%;
   color: #fff;
   font-size: 35px;
 }
@@ -215,6 +215,37 @@ body {
   font-size: 30px;
 }
 
+.container__faq-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  color: #7E012E;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container__faq-list {
+  width: 570px;
+  font-weight: 800;
+  margin: 0;
+  font-size: 20px;
+}
+
+.container__faq-list__item-point {
+  padding-bottom: 20px;
+  color: #7E012E;
+}
+
+.container__faq-list__item-nopoint {
+  list-style-type: none;
+  padding-bottom: 40px;
+}
+
+.container__space {
+  width: 100px;
+}
+
 .container-figure {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,6 +258,23 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 15px;
+}
+
+.container-figure__list {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .blk-gallery {
