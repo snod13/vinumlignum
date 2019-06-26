@@ -246,6 +246,42 @@ body {
   width: 100px;
 }
 
+.container__review {
+  margin-left: 35%;
+  width: 720px;
+  height: 540px;
+}
+
+.container__review__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 720px;
+  height: 420px;
+  margin-top: 220px;
+  background: #F4E9D1;
+  text-align: center;
+}
+
+.container__review__box__avatar {
+  position: relative;
+  top: -50%;
+  left: -15%;
+}
+
+.container__review__text {
+  position: relative;
+  font-size: 30px;
+  color: #470128;
+  left: -15%;
+}
+
 .container-figure {
   display: -webkit-box;
   display: -ms-flexbox;
