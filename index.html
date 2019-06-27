@@ -197,12 +197,12 @@
       <div class="container">
         Отзывы
         <div class="container__review">
-          <div class="container__review__box">
+          <a href="#" class="container__review__link"><div class="container__review__box">
             <div class="container__review__box__avatar">
               <img src="img/avatar.svg" alt="Аватарка" class="container__review__box__avatar__img">
             </div>
             <span class="container__review__text">В скором времени<br>тут появятся ваши отзывы</span>
-          </div>
+          </div></a>
         </div>
       </div>
       <!-- /.container -->
@@ -213,15 +213,41 @@
   <section id="order" class="section">
     <div class="section__light">
       <div class="container">
-        Заявка
-        <form action="send.php" method="POST" class="order-form">
-          Ваше имя <input type="text" name="first_name"><br>
-          Email: <input type="text" name="email" required placeholder="Обязательное поле"><br>
-          Номер телефона: <input type="text" name="phone"><br>
-          Сообщение:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-          <input type="submit" name="submit" value="Submit">
-        </form>
-        <!-- /.order-form -->
+        <div class="container-figure__order">
+          <figure class="container__order__offer">
+            <figcaption class="container__order__offer__text">При заказе<br>от 1000 коробов<br>скидка 25%</figcaption>
+            <img src="img/sale.jpg" alt="Скидка" class="container__order__offer__img">
+          </figure>
+          <div class="container__order__order-form">
+            <div class="container__order__order-form__block">
+              <p class="container__order__order-form__block__name">Оставьте заявку</p>
+              <form action="send.php" method="POST" class="container__order__order-form__block__form">
+                <input type="text" name="first_name" placeholder="Имя" 
+                class="container__order__order-form__block__form__input">
+                <input type="text" name="second_name" placeholder="Фамилия" 
+                class="container__order__order-form__block__form__input"><br>
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" 
+                class="container__order__order-form__block__form__input">
+                <input type="email" name="email" id="email" placeholder="E-mail" 
+                class="container__order__order-form__block__form__input"><br>
+                <input type="checkbox" name="fanera" id="fanera" checked 
+                class="container__order__order-form__block__form__check">
+                <label for="fanera" class="container__order__order-form__block__form__check__label"> Фанерные коробки</label>
+                <input type="checkbox" name="wooden" id="wooden" 
+                class="container__order__order-form__block__form__check">
+                <label for="wooden" class="container__order__order-form__block__form__check__label"> Деревянные коробки</label> <br>
+                <input type="number" name="count" id="count" placeholder="100" 
+                class="container__order__order-form__block__form__input" min="1">
+                <label for="count" class="container__order__order-form__block__form__input__label">Количество коробок</label><br>
+                <input type="file" name="add" id="add" class="container__order__order-form__block__form__add"><br>
+                <textarea rows="5" name="message" cols="30" placeholder="Дополнительное описание" 
+                class="container__order__order-form__block__form__textarea"></textarea><br>
+            </div>
+                <input type="submit" name="submit" value="Оставить заявку" class="hero__button">
+              </form>
+          </div>
+        </div>
+        <!-- /.container__order__form -->
       </div>
       <!-- /.container -->
     </div>
