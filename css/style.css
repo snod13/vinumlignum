@@ -268,7 +268,7 @@ body {
           justify-content: center;
   width: 720px;
   height: 420px;
-  margin-top: 220px;
+  margin-top: 100px;
   background: #F4E9D1;
   text-align: center;
 }
@@ -371,6 +371,7 @@ body {
   padding-left: 10px;
   font-size: 20px;
   font-weight: 900;
+  outline: none;
 }
 
 .container__order__order-form__block__form__textarea::-webkit-input-placeholder {
@@ -391,6 +392,14 @@ body {
 .container__order__order-form__block__form__textarea::placeholder {
   color: #7E012E;
   opacity: 0.6;
+}
+
+.reviews-title {
+  display: block;
+  font-size: 35px;
+  font-weight: normal;
+  color: #fff;
+  padding-top: 30px;
 }
 
 .check__label {
@@ -450,6 +459,11 @@ body {
   font-size: 34px;
   margin-top: 25px;
   margin-left: 90px;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
 }
 
 .container-figure {
@@ -495,6 +509,7 @@ body {
 }
 
 .blk-gallery {
+  position: relative;
   padding-bottom: 170px;
 }
 
@@ -525,6 +540,10 @@ body {
   overflow: hidden;
   position: absolute;
   z-index: -1;
+}
+
+.faq, .order, .reviews {
+  position: relative;
 }
 
 .gallery-container {
@@ -626,5 +645,161 @@ body {
   max-height: 94%;
   max-width: 94%;
   margin: 1% 0 0 0;
+}
+
+.footer {
+  padding-bottom: 50px;
+  background-color: #470128;
+}
+
+.footer__title {
+  padding-top: 40px;
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__main-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer__secondary-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 755px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.points a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.points_main_text {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.points_main__img {
+  margin-right: 15px;
+}
+
+.line {
+  display: block;
+  margin-bottom: 20px;
+  border: 2px solid #F4E9D1;
+}
+
+.conclusion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.company {
+  margin-right: 50px;
+}
+
+.made-by a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.faq-triangle-left {
+  position: absolute;
+  width: 100px;
+}
+
+.faq-triangle-left-up {
+  border: 100px solid transparent;
+  border-left: 100px solid #7E012E;
+  border-top: 100px solid #7E012E;
+}
+
+.faq-triangle-down {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+}
+
+.faq-triangle-down-left {
+  border: 100px solid transparent;
+  border-bottom: 100px solid #7E012E;
+  border-left: 100px solid #7E012E;
+}
+
+.faq-triangle-right {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  width: 100px;
+}
+
+.faq-triangle-right-down {
+  border: 100px solid transparent;
+  border-right: 100px solid #7E012E;
+  border-bottom: 100px solid #7E012E;
+}
+
+.reviews-triangle-up {
+  position: absolute;
+  right: 100px;
+  width: 100px;
+}
+
+.reviews-triangle-up-right {
+  border: 100px solid transparent;
+  border-right: 100px solid #7E012E;
+  border-top: 100px solid #7E012E;
+}
+
+.order-triangle-left {
+  position: absolute;
+  width: 100px;
+}
+
+.order-triangle-left-up {
+  border: 100px solid transparent;
+  border-left: 100px solid #7E012E;
+  border-top: 100px solid #7E012E;
+}
+
+.order-triangle-right {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  width: 100px;
+}
+
+.order-triangle-right-down {
+  border: 100px solid transparent;
+  border-right: 100px solid #7E012E;
+  border-bottom: 100px solid #7E012E;
 }
 /*# sourceMappingURL=style.css.map */
