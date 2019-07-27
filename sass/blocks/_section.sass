@@ -96,6 +96,7 @@
         font-size: 35px
         color: $light-wine
         font-weight: 900
+        margin-bottom: 35px
       &__img
         width: 500px
         height: 400px
@@ -122,10 +123,16 @@
             width: 215px
             height: 50px
             padding-left: 10px
+            font:
+              size: 20px
+              weight: 900
             &__label
               margin-bottom: 15px
               margin-right: 15px
               color: $light-text
+              font:
+                size: 20px
+                weight: 900
           &__input::placeholder
             color: $light-wine
             opacity: 0.6
@@ -135,6 +142,9 @@
             margin-bottom: 15px
             color: $light-wine
             padding-left: 10px
+            font:
+              size: 20px
+              weight: 900
             &::placeholder
               color: $light-wine
               opacity: 0.6
@@ -145,6 +155,7 @@
   display: inline-block
   position: relative
   margin-bottom: 15px
+  margin-right: 10px
 .check
   display: none
 .check + .trap
@@ -171,6 +182,24 @@
   background-position: center
   cursor: pointer
 
+.checkbox-text
+  position: relative
+  display: inline-block
+  color: $light-text
+  top: -20px
+  margin-right: 65px
+  cursor: pointer
+  font-size: 22px
+
+.form__submit__button
+  border-radius: 10px
+  padding: 15px 40px
+  background: $light-wine
+  color: $light-text
+  font-size: 34px
+  margin-top: 25px
+  margin-left: 90px
+
 .container-figure
   display: flex
   align-items: center
@@ -185,11 +214,40 @@
     flex-direction: row
   &__order
     display: flex
-    //align-items: center
-    //text-align: center
     justify-content: space-between
-    padding-bottom: 15px
+    padding-bottom: 100px
+    padding-top: 60px
 
 
 .blk-gallery
   padding-bottom: 170px
+
+//Прикрепить файл
+.chous
+  border-radius: 4px
+  width: 445px
+  text-align: center
+  cursor: pointer
+  display: block
+  padding: 20px 25px
+  color: $light-wine
+  background-color: $light-text
+  font:
+    size: 20px
+    weight: 900
+
+
+.chous:hover
+  color: $light-text
+  background-position: bottom left
+  background-color: $dark-color
+  border: 1px solid $light-text
+
+    
+.my
+  width: 0.1px
+  height: 0.1px
+  opacity: 0
+  overflow: hidden
+  position: absolute
+  z-index: -1

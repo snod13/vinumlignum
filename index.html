@@ -235,19 +235,22 @@
                   class="check">
                   <span class="trap"></span>
                 </label>
+                <label for="fanera"><span class="checkbox-text">Фанерные<br> коробки</span></label>
                 <label for="wooden" class="check__label">
                   <input type="checkbox" name="wooden" id="wooden"
                   class="check">
                   <span class="trap"></span>
-                </label> <br>
+                </label>
+                <label for="wooden"><span class="checkbox-text">Деревянные<br> коробки</span></label><br>
                 <input type="number" name="count" id="count" placeholder="100" 
                 class="container__order__order-form__block__form__input" min="1">
                 <label for="count" class="container__order__order-form__block__form__input__label">Количество коробок</label><br>
-                <input type="file" name="add" id="add" class="container__order__order-form__block__form__add"><br>
+                <label for="add" class="chous">Прикрепить файл</label>
+                <input type="file" name="add" id="add" class="my"><br>
                 <textarea rows="5" name="message" cols="30" placeholder="Дополнительное описание" 
                 class="container__order__order-form__block__form__textarea"></textarea><br>
             </div>
-                <input type="submit" name="submit" value="Оставить заявку" class="hero__button">
+                <input type="submit" name="submit" value="Оставить заявку" class="form__submit__button">
               </form>
           </div>
         </div>
@@ -268,6 +271,10 @@
   <script type="text/javascript">
     $(function () {
       $('#gallery-container').gallery();
+    });
+    $('.my').change(function() {
+    if ($(this).val() != '') $(this).prev().text('Выбрано файлов: ' + $(this)[0].files.length);
+    else $(this).prev().text('Выберите файлы');
     });
   </script>
 </body>
