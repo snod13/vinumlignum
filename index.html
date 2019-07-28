@@ -276,22 +276,22 @@
           <div class="container__order__order-form">
             <div class="container__order__order-form__block">
               <p class="container__order__order-form__block__name">Оставьте заявку</p>
-              <form action="send.php" method="POST" class="container__order__order-form__block__form">
+              <form action="mail.php" enctype="multipart/form-data" method="POST" class="container__order__order-form__block__form">
                 <input type="text" name="first_name" placeholder="Имя"
-                  class="container__order__order-form__block__form__input">
+                  class="container__order__order-form__block__form__input" required>
                 <input type="text" name="second_name" placeholder="Фамилия"
-                  class="container__order__order-form__block__form__input"><br>
-                <input type="tel" name="phone" id="phone" placeholder="Телефон"
-                  class="container__order__order-form__block__form__input">
+                  class="container__order__order-form__block__form__input" required><br>
+                <input type="tel" name="phone" id="phone" placeholder="8 999 888 77 77"
+                  class="container__order__order-form__block__form__input" required>
                 <input type="email" name="email" id="email" placeholder="E-mail"
-                  class="container__order__order-form__block__form__input"><br>
+                  class="container__order__order-form__block__form__input" required><br>
                 <label for="fanera" class="check__label">
-                  <input type="checkbox" name="fanera" id="fanera" checked class="check">
+                  <input type="checkbox" name="material[]" id="fanera" checked class="check" value="A">
                   <span class="trap"></span>
                 </label>
                 <label for="fanera"><span class="checkbox-text">Фанерные<br> коробки</span></label>
                 <label for="wooden" class="check__label">
-                  <input type="checkbox" name="wooden" id="wooden" class="check">
+                  <input type="checkbox" name="material[]" id="wooden" class="check" value="B">
                   <span class="trap"></span>
                 </label>
                 <label for="wooden"><span class="checkbox-text">Деревянные<br> коробки</span></label><br>
