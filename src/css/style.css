@@ -162,22 +162,11 @@ body {
   background-color: #F4E9D1;
 }
 
-.triangle {
-  position: absolute;
-  right: 15%;
-  width: 300px;
-}
-
-.triangle__form {
-  border-left: 400px solid transparent;
-  border-right: 400px solid transparent;
-  border-top: 170px solid #7E012E;
-}
-
 .container__name {
-  position: absolute;
-  margin-top: 15px;
-  right: 10%;
+  display: block;
+  margin: 0;
+  padding-top: 50px;
+  text-align: center;
   color: #fff;
   font-size: 35px;
 }
@@ -542,7 +531,7 @@ input {
   z-index: -1;
 }
 
-.faq, .order, .reviews {
+.faq, .order, .reviews, .about {
   position: relative;
 }
 
@@ -550,7 +539,7 @@ input {
   width: 100%;
   height: 400px;
   position: relative;
-  top: 140px;
+  top: 80px;
 }
 
 .gallery-wrapper {

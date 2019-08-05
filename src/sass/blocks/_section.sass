@@ -3,20 +3,13 @@
     background-color: $dark-color
   &__light
     background-color: $light-color
-.triangle
-  position: absolute
-  right: 15%
-  width: 300px
-  &__form
-	  border-left: 400px solid transparent
-	  border-right: 400px solid transparent
-	  border-top: 170px solid $light-wine
 .container
   //О компании
   &__name
-    position: absolute
-    margin-top: 15px
-    right: 10%
+    display: block
+    margin: 0
+    padding-top: 50px
+    text-align: center
     color: $light-text
     font-size: 35px
   &__title
@@ -265,5 +258,5 @@ input
   position: absolute
   z-index: -1
 
-.faq, .order, .reviews
+.faq, .order, .reviews, .about
   position: relative
