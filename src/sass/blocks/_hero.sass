@@ -5,46 +5,101 @@
   background-repeat: no-repeat
   background-size: cover
   background-color: rgba(28, 29, 35, 0.4)
-  padding-top: 235px
-  padding-bottom: 70px
-  &__name
-    +mainname
-    font-size: 110px
-    color: $light-text
-    font-weight: 100
-    padding-left: 230px
-    margin-bottom: 70px
-    margin-top: -60px
+  padding-top: 50px
+  padding-bottom: 50px
+  &__heading
+    display: flex
+    align-items: center
   &__title
-    margin-bottom: 20px
+    margin: 0
+    margin-left: 15px
+    font-size: 110px
+    +mainname
+    color: $white
+    line-height: 1
+  &__logo
+    z-index: 10
+    max-width: 235px
+    img
+      display: block
+  &__text
+    margin: 0
+    margin-top: 10px
+    max-width: 1000px
     font-size: 70px
-    color: $light-text
-    font-weight: 900
-    line-height: 65px
-  &__subtitle-list
-    padding-inline-start: 0px
-    padding-bottom: 30px
-  &__subtitle 
-    line-height: 40px
-    font-size: 30px
-    color: $light-text
-    &-list
-      list-style-type: none
-  &__button
-    border-radius: 10px
+    color: $white
+    line-height: 0.9
+  &-list
+    margin-top: 20px
+    margin-bottom: 0
+    list-style: none
+    padding: 0
+    &__item
+      color: $white
+      font-size: 30px
+      line-height: 40px
+  &__btn
+    margin-top: 20px
+    display: inline-block
+    text-align: center
     padding: 15px 40px
-    background: $light-wine
-    color: $light-text
     font-size: 34px
     text-decoration: none
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8)
-
-.logo
-  position: absolute
-  z-index: 10
-  top: 40px
-  width: 190px
-  height: 310px
-  background-image: url('../img/logo.svg')
-  background-size: contain
-  background-position: center
+    background-color: $light-wine
+@media (min-width: 992px)
+  .hero
+    &__btn
+      &:hover
+        box-shadow: 0 0 20px rgba($white, 0.8)
+@media (max-width: 1200px)
+  .hero
+    &__logo
+      max-width: 190px
+    &__title
+      font-size: 90px
+    &__text
+      max-width: 900px
+      font-size: 55px
+@media (max-width: 992px)
+  .hero
+    &__logo
+      max-width: 150px
+    &__title
+      font-size: 75px
+    &__text
+      font-size: 40px
+    &-list
+      &__item
+        font-size: 25px
+        line-height: 1.4
+    &__btn
+      font-size: 23px
+@media (max-width: 768px)
+  .hero
+    padding-bottom: 20px
+    &__logo
+      max-width: 100px
+    &__title
+      font-size: 60px
+    &__text
+      text-align: center
+      max-width: 100%
+      font-size: 35px
+    &-list
+      &__item
+        font-size: 20px
+    &__btn
+      display: block
+      margin: auto
+      font-size: 18px
+@media (max-width: 474px)
+  .hero
+    &__logo
+      max-width: 70px
+    &__title
+      font-size: 45px
+    &__text
+      font-size: 27px
+    &-list
+      &__item
+        font-size: 17px

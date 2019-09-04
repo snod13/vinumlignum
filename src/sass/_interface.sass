@@ -1,3 +1,24 @@
+*
+	box-sizing: border-box
 body
   +alltext
-  overflow-x: hidden
+img
+  max-width: 100%
+  
+.container
+  width: 1140px
+  margin: auto
+@media (max-width: 1200px)
+  .container
+    width: 960px
+@media (max-width: 992px)
+  .container
+    max-width: 900px
+    width: 90%
+@media (max-width: 425px)
+  .container
+    width: 95%
+
+.button
+  color: $white
+  border-radius: 10px
