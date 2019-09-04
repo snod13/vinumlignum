@@ -1,0 +1,28 @@
+.faq
+  background-color: $light-color
+  padding-top: 40px
+  &__title
+    color: $light-wine
+  &-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+      flex-basis: 45%
+      font-size: 20px
+      margin-bottom: 20px
+      color: $light-wine
+    &__description
+      color: #000000
+@media (max-width: 662px)
+  .faq
+    padding-top: 20px
+    &__title
+      margin-bottom: 20px
+    &-list
+      &__item
+        flex-basis: 100%
+        margin-bottom: 10px
+      &__description
+        margin-top: 10px
+        margin-bottom: 15px
