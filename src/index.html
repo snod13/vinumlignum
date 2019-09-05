@@ -12,8 +12,8 @@
   деревянная коробка, коробка для вина, подарочная упаковка, изготовление коробок, декоративная упаковка купить, 
   деревянная коробка купить, коробка для вина купить, подарочная упаковка купить, СПБ, Питер, Санкт-Петербург">
   <title>Vinum Lignum - декоративные коробы для вина</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/modernizr.custom.53451.js"></script>
   <!-- Yandex.Metrika counter -->
   <script>
     (function (m, e, t, r, i, k, a) {
@@ -184,7 +184,34 @@
       <!-- /.container -->
     </section>
     <!-- /.section about -->
-
+    <section class="section gallery">
+      <div class="container">
+        <h2 class="section__title gallery__title">
+          Примеры работ
+        </h2>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/gallery/1.jpg" alt="картинка">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gallery/2.jpg" alt="картинка">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gallery/3.jpg" alt="картинка">
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section gallery -->
     <section class="section faq">
       <div class="container">
         <h2 class="section__title faq__title">
@@ -330,18 +357,34 @@
     <!-- </div> -->
     <!-- /.container -->
   <!-- </footer> -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/popup_img.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
   <!-- <script src="js/modal.js"></script> -->
-  <script src="js/jquery.gallery.js"></script>
-  <script>
-    $(function () {
-      $('#gallery-container').gallery();
-    });
+  <!-- <script>
     $('.my').change(function () {
       if ($(this).val() != '') $(this).prev().text('Выбрано файлов: ' + $(this)[0].files.length);
       else $(this).prev().text('Выберите файлы');
+    });
+  </script> -->
+  <script>
+    //initialize swiper when document ready
+    var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+    coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows : true,
+    },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
   </script>
 </body>
