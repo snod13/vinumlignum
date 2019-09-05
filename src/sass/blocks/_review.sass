@@ -1,0 +1,61 @@
+.review
+  background-color: $dark-color
+  padding-top: 40px
+  padding-bottom: 40px
+  &__title
+    color: $white
+    margin: 0
+    text-align: left
+  &-block
+    display: flex
+    justify-content: flex-end
+  &__container
+    margin-top: 70px
+    flex-basis: 70%
+    background-color: $light-color
+    position: relative
+  &__avatar
+    position: absolute
+    top: -30%
+    left: -7%
+    max-width: 255px
+    img
+      display: block
+  &__text
+    margin: auto
+    max-width: 360px
+    text-align: center
+    font-size: 30px
+    padding-top: 176px
+    padding-bottom: 176px
+@media (max-width: 992px)
+  .review
+    &__title
+      text-align: center
+    &__container
+      flex-basis: 90%
+@media (max-width: 768px)
+  .review
+    padding-top: 20px
+    padding-bottom: 20px
+    &__avatar
+      max-width: 170px
+      top: -20%
+    &__container
+      margin-top: 40px
+@media (max-width: 545px)
+  .review
+    &__container
+      flex-basis: 100%
+    &__avatar
+      max-width: 120px
+      top: -10%
+    &__text
+      padding: 100px 0px
+      font-size: 20px
+      max-width: 300px
+@media (max-width: 375px)
+  .review
+    &__avatar
+      max-width: 90px
+      left: -3%
