@@ -1,0 +1,84 @@
+.order
+  padding-top: 40px
+  padding-bottom: 40px
+  background-color: $light-color
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-offer
+    flex-basis: 45%
+    &__img
+      max-width: 500px
+  &-form
+    flex-basis: 45%
+    &__block
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      background-color: $light-wine
+    &__wrapper
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      max-width: 450px
+    &__input
+      display: inline-block
+      color: $light-wine
+      max-width: 220px
+      flex-basis: 35%
+      margin-bottom: 10px
+      padding: 15px 10px
+      padding-right: 0
+      font-size: 20px
+      border-radius: 5px
+      border: none
+      &::placeholder
+        color: rgba($light-wine, 0.6)
+    &__btn
+      display: block
+      margin: auto
+      background-color: $light-wine
+      padding: 10px 25px
+      font-size: 20px
+    &__custom
+      display: flex
+      align-items: center
+      align-self: flex-start
+    &__label
+      width: 50px
+      min-height: 50px
+      display: inline-block
+      position: relative
+      margin-bottom: 15px
+      margin-right: 15px
+    &__check
+      display: none
+    &__check + .trap
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background-image: url('../img/buttons/cb1.png')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      cursor: pointer
+    &__check:checked + .trap
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background-image: url('../img/buttons/cb2.png')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      cursor: pointer
+    &__caption
+      display: inline-block
+      color: $white
+      font-size: 22px
+      max-width: 105px
