@@ -1064,6 +1064,10 @@ input, button {
       flex-basis: 45%;
 }
 
+.order-offer__title {
+  color: #7E012E;
+}
+
 .order-offer__img {
   max-width: 500px;
 }
@@ -1071,6 +1075,10 @@ input, button {
 .order-form {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
+}
+
+.order-form__title {
+  color: #ffffff;
 }
 
 .order-form__block {
@@ -1081,8 +1089,6 @@ input, button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   background-color: #7E012E;
 }
 
@@ -1095,9 +1101,7 @@ input, button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: auto;
   max-width: 450px;
 }
 
@@ -1133,21 +1137,11 @@ input, button {
 
 .order-form__btn {
   display: block;
+  border: none;
   margin: auto;
   background-color: #7E012E;
   padding: 10px 25px;
   font-size: 20px;
-}
-
-.order-form__custom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
 .order-form__label {
@@ -1193,6 +1187,9 @@ input, button {
   display: inline-block;
   color: #ffffff;
   font-size: 22px;
+}
+
+.order-form__box {
   max-width: 105px;
 }
 /*# sourceMappingURL=style.css.map */
