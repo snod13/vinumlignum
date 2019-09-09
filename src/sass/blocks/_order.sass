@@ -27,8 +27,7 @@
       flex-direction: column
       background-color: $light-wine
       margin-bottom: 15px
-      padding-top: 20px
-      padding-bottom: 20px
+      padding: 20px
       border-radius: 10px
     &__wrapper
       display: flex
@@ -39,8 +38,7 @@
     &__input
       display: inline-block
       color: $light-wine
-      max-width: 220px
-      flex-basis: 35%
+      width: 49%
       margin-bottom: 10px
       padding: 15px 10px
       padding-right: 0
@@ -57,8 +55,13 @@
       padding: 10px 25px
       font-size: 25px
       cursor: pointer
+    &__counter
+      width: 100%
+      display: flex
+      align-items: center
     &__caption
       display: inline-block
+      width: 50%
       color: $white
       font-size: 22px
       margin-left: 10px
@@ -69,7 +72,6 @@
       font-size: 20px
       padding: 5px 10px
       padding-right: 0
-      margin-bottom: 15px
       &::placeholder
         color: rgba($light-wine, 0.6)
     &__addbtn
@@ -89,3 +91,48 @@
       overflow: hidden
       position: absolute
       z-index: -1
+@media (max-width: 1200px)
+  .order
+    &-form
+      &__count
+        width: 40%
+@media (max-width: 992px)
+  .order
+    &-block
+      flex-direction: column
+    &-offer
+      flex-basis: 100%
+    &-form
+      flex-basis: 100%
+      &__count
+        width: 50%
+@media (max-width: 768px)
+  .order
+    &-form
+      &__input
+        width: 100%
+      &__count
+        width: 50%
+      &__btn
+        width: 100%
+        font-size: 20px
+@media (max-width: 630px)
+  .order
+    &-offer
+      &__title
+        max-width: 250px
+    &-form
+      &__input
+        font-size: 16px
+      &__caption
+        font-size: 18px
+      &__addbtn
+        font-size: 18px
+      &__message
+        font-size: 18px
+@media (max-width: 375px)
+  .order
+    &-form
+      &__block
+        padding: 5px
+        padding-bottom: 10px

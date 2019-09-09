@@ -1097,8 +1097,7 @@ input, button {
           flex-direction: column;
   background-color: #7E012E;
   margin-bottom: 15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   border-radius: 10px;
 }
 
@@ -1118,9 +1117,7 @@ input, button {
 .order-form__input {
   display: inline-block;
   color: #7E012E;
-  max-width: 220px;
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
+  width: 49%;
   margin-bottom: 10px;
   padding: 15px 10px;
   padding-right: 0;
@@ -1155,8 +1152,19 @@ input, button {
   cursor: pointer;
 }
 
+.order-form__counter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .order-form__caption {
   display: inline-block;
+  width: 50%;
   color: #ffffff;
   font-size: 22px;
   margin-left: 10px;
@@ -1169,7 +1177,6 @@ input, button {
   font-size: 20px;
   padding: 5px 10px;
   padding-right: 0;
-  margin-bottom: 15px;
 }
 
 .order-form__message::-webkit-input-placeholder {
@@ -1207,5 +1214,69 @@ input, button {
   overflow: hidden;
   position: absolute;
   z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .order-form__count {
+    width: 40%;
+  }
+}
+
+@media (max-width: 992px) {
+  .order-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order-offer {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .order-form {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .order-form__count {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-form__input {
+    width: 100%;
+  }
+  .order-form__count {
+    width: 50%;
+  }
+  .order-form__btn {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 630px) {
+  .order-offer__title {
+    max-width: 250px;
+  }
+  .order-form__input {
+    font-size: 16px;
+  }
+  .order-form__caption {
+    font-size: 18px;
+  }
+  .order-form__addbtn {
+    font-size: 18px;
+  }
+  .order-form__message {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .order-form__block {
+    padding: 5px;
+    padding-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
