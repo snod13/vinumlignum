@@ -1065,7 +1065,11 @@ input, button {
 }
 
 .order-offer__title {
+  margin: auto;
   color: #7E012E;
+  max-width: 270px;
+  font-weight: 100;
+  margin-bottom: 15px;
 }
 
 .order-offer__img {
@@ -1078,6 +1082,8 @@ input, button {
 }
 
 .order-form__title {
+  margin: 0;
+  margin-bottom: 10px;
   color: #ffffff;
 }
 
@@ -1090,6 +1096,10 @@ input, button {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #7E012E;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
 }
 
 .order-form__wrapper {
@@ -1141,45 +1151,7 @@ input, button {
   margin: auto;
   background-color: #7E012E;
   padding: 10px 25px;
-  font-size: 20px;
-}
-
-.order-form__label {
-  width: 50px;
-  min-height: 50px;
-  display: inline-block;
-  position: relative;
-  margin-bottom: 15px;
-  margin-right: 15px;
-}
-
-.order-form__check {
-  display: none;
-}
-
-.order-form__check + .trap {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/buttons/cb1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-}
-
-.order-form__check:checked + .trap {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/buttons/cb2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  font-size: 25px;
   cursor: pointer;
 }
 
@@ -1187,9 +1159,53 @@ input, button {
   display: inline-block;
   color: #ffffff;
   font-size: 22px;
+  margin-left: 10px;
 }
 
-.order-form__box {
-  max-width: 105px;
+.order-form__message {
+  width: 100%;
+  border-radius: 5px;
+  color: #7E012E;
+  font-size: 20px;
+  padding: 5px 10px;
+  padding-right: 0;
+  margin-bottom: 15px;
+}
+
+.order-form__message::-webkit-input-placeholder {
+  color: rgba(126, 1, 46, 0.6);
+}
+
+.order-form__message:-ms-input-placeholder {
+  color: rgba(126, 1, 46, 0.6);
+}
+
+.order-form__message::-ms-input-placeholder {
+  color: rgba(126, 1, 46, 0.6);
+}
+
+.order-form__message::placeholder {
+  color: rgba(126, 1, 46, 0.6);
+}
+
+.order-form__addbtn {
+  background-color: #ffffff;
+  color: #7E012E;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.order-form__addon {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
