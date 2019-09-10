@@ -4,6 +4,13 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 require 'phpmailer/PHPMailerAutoload.php';
+if(isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
+	$secret = '6LelsLcUAAAAAGITwVG5HtEGc1ji52PHq58uOdSZ';
+	$ip = $_SERVER['REMOTE_ADDR'];
+	$response = $_POST['g-recaptcha-response'];
+	$rsp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$ip");
+	$arr = json_decode($rsp, TRUE);
+	if($arr['success']){
 // Переменные, которые отправляет пользователь
 $name = $_POST['username'];
 $surname = $_POST['usersurname'];
@@ -25,6 +32,7 @@ try {
     $mail->setFrom('sork.andrew@mail.ru', 'Vinum Lignum'); // Адрес самой почты и имя отправителя
     // Получатель письма
     $mail->addAddress('sork67@gmail.com');
+    $mail->addAddress('order@vinumlignum.ru');
     // Файлы
 if (!empty($_FILES['myfile']['name'][0])) {
     for ($ct = 0; $ct < count($_FILES['myfile']['tmp_name']); $ct++) {
@@ -37,7 +45,6 @@ if (!empty($_FILES['myfile']['name'][0])) {
         }
     }   
 }
-    // $mail->addAttachment($_FILES['myfile']['tmp_name'], $_FILES['myfile']['name']);
         // -----------------------
         // Само письмо
         // -----------------------
@@ -57,5 +64,7 @@ echo "Сообщение не было отправлено. Неверно ук
 }
 } catch (Exception $e) {
     echo "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+}
+}
 }
 ?>
