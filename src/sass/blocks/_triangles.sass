@@ -1,52 +1,80 @@
-.faq-triangle
-  &-left
-    position: absolute
-    width: 100px
-    &-up
-      border: 100px solid transparent
-      border-left: 100px solid $light-wine
-      border-top: 100px solid $light-wine
-  &-down
-    position: absolute
-    bottom: 0
-    width: 100px
-    &-left
-      border: 100px solid transparent
-      border-bottom: 100px solid $light-wine
-      border-left: 100px solid $light-wine
-  &-right
-    position: absolute
-    bottom: 0
-    right: 100px
-    width: 100px
-    &-down
-      border: 100px solid transparent
-      border-right: 100px solid $light-wine
-      border-bottom: 100px solid $light-wine
-.reviews-triangle
-  &-up
-    position: absolute
-    right: 100px
-    width: 100px
-    &-right
-      border: 100px solid transparent
-      border-right: 100px solid $light-wine
-      border-top: 100px solid $light-wine
-.order-triangle
-  &-left
-    position: absolute
-    width: 100px
-    &-up
-      border: 100px solid transparent
-      border-left: 100px solid $light-wine
-      border-top: 100px solid $light-wine
-  &-right
-    position: absolute
-    bottom: 0
-    right: 100px
-    width: 100px
-    &-down
-      border: 100px solid transparent
-      border-right: 100px solid $light-wine
-      border-bottom: 100px solid $light-wine
-  
+$size: 100px
+.triangeInTopLeft
+  position: absolute
+  top: 0
+  left: 0
+  border: $size solid transparent
+  border-left: $size solid $light-wine
+  border-top: $size solid $light-wine
+.triangleInBottomRight
+  position: absolute
+  right: 0
+  bottom: 0
+  border: $size solid transparent
+  border-right: $size solid $light-wine
+  border-bottom: $size solid $light-wine
+.triangleInTopRight
+  position: absolute
+  top: 0
+  right: 0
+  border: $size solid transparent
+  border-top: $size solid $light-wine
+  border-right: $size solid $light-wine
+.triangleInBottomLeft
+  position: absolute
+  bottom: 0
+  left: 0
+  border: $size solid transparent
+  border-bottom: $size solid $light-wine
+  border-left: $size solid $light-wine
+@media (max-width: 1440px)
+  .triangeInTopLeft
+    border: 70px solid transparent
+    border-left: 70px solid $light-wine
+    border-top: 70px solid $light-wine
+  .triangleInBottomRight
+    border: 70px solid transparent
+    border-right: 70px solid $light-wine
+    border-bottom: 70px solid $light-wine
+  .triangleInTopRight
+    border: 70px solid transparent
+    border-top: 70px solid $light-wine
+    border-right: 70px solid $light-wine
+  .triangleInBottomLeft
+    border: 70px solid transparent
+    border-left: 70px solid $light-wine
+    border-bottom: 70px solid $light-wine
+@media (max-width: 768px)
+  .triangeInTopLeft
+    border: 40px solid transparent
+    border-left: 40px solid $light-wine
+    border-top: 40px solid $light-wine
+  .triangleInBottomRight
+    border: 40px solid transparent
+    border-right: 40px solid $light-wine
+    border-bottom: 40px solid $light-wine
+  .triangleInTopRight
+    border: 40px solid transparent
+    border-top: 40px solid $light-wine
+    border-right: 40px solid $light-wine
+  .triangleInBottomLeft
+    border: 40px solid transparent
+    border-left: 40px solid $light-wine
+    border-bottom: 40px solid $light-wine
+@media (max-width: 425px)
+  .triangeInTopLeft
+    border: 20px solid transparent
+    border-left: 20px solid $light-wine
+    border-top: 20px solid $light-wine
+  .triangleInBottomRight
+    border: 20px solid transparent
+    border-right: 20px solid $light-wine
+    border-bottom: 20px solid $light-wine
+  .triangleInTopRight
+    border: 20px solid transparent
+    border-top: 20px solid $light-wine
+    border-right: 20px solid $light-wine
+  .triangleInBottomLeft
+    border: 20px solid transparent
+    border-left: 20px solid $light-wine
+    border-bottom: 20px solid $light-wine

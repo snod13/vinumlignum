@@ -666,6 +666,7 @@ input, button, textarea {
 }
 
 .about {
+  position: relative;
   padding-top: 40px;
   background-color: #F4E9D1;
 }
@@ -826,6 +827,7 @@ input, button, textarea {
 }
 
 .gallery {
+  position: relative;
   background-color: #470128;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -897,6 +899,7 @@ input, button, textarea {
 }
 
 .faq {
+  position: relative;
   background-color: #F4E9D1;
   padding-top: 40px;
 }
@@ -948,6 +951,7 @@ input, button, textarea {
 }
 
 .review {
+  position: relative;
   background-color: #470128;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1044,6 +1048,7 @@ input, button, textarea {
 }
 
 .order {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #F4E9D1;
@@ -1539,6 +1544,111 @@ div.invalid {
   }
   .modal-message__text {
     font-size: 18px;
+  }
+}
+
+.triangeInTopLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 100px solid transparent;
+  border-left: 100px solid #7E012E;
+  border-top: 100px solid #7E012E;
+}
+
+.triangleInBottomRight {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 100px solid transparent;
+  border-right: 100px solid #7E012E;
+  border-bottom: 100px solid #7E012E;
+}
+
+.triangleInTopRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 100px solid transparent;
+  border-top: 100px solid #7E012E;
+  border-right: 100px solid #7E012E;
+}
+
+.triangleInBottomLeft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 100px solid transparent;
+  border-bottom: 100px solid #7E012E;
+  border-left: 100px solid #7E012E;
+}
+
+@media (max-width: 1440px) {
+  .triangeInTopLeft {
+    border: 70px solid transparent;
+    border-left: 70px solid #7E012E;
+    border-top: 70px solid #7E012E;
+  }
+  .triangleInBottomRight {
+    border: 70px solid transparent;
+    border-right: 70px solid #7E012E;
+    border-bottom: 70px solid #7E012E;
+  }
+  .triangleInTopRight {
+    border: 70px solid transparent;
+    border-top: 70px solid #7E012E;
+    border-right: 70px solid #7E012E;
+  }
+  .triangleInBottomLeft {
+    border: 70px solid transparent;
+    border-left: 70px solid #7E012E;
+    border-bottom: 70px solid #7E012E;
+  }
+}
+
+@media (max-width: 768px) {
+  .triangeInTopLeft {
+    border: 40px solid transparent;
+    border-left: 40px solid #7E012E;
+    border-top: 40px solid #7E012E;
+  }
+  .triangleInBottomRight {
+    border: 40px solid transparent;
+    border-right: 40px solid #7E012E;
+    border-bottom: 40px solid #7E012E;
+  }
+  .triangleInTopRight {
+    border: 40px solid transparent;
+    border-top: 40px solid #7E012E;
+    border-right: 40px solid #7E012E;
+  }
+  .triangleInBottomLeft {
+    border: 40px solid transparent;
+    border-left: 40px solid #7E012E;
+    border-bottom: 40px solid #7E012E;
+  }
+}
+
+@media (max-width: 425px) {
+  .triangeInTopLeft {
+    border: 20px solid transparent;
+    border-left: 20px solid #7E012E;
+    border-top: 20px solid #7E012E;
+  }
+  .triangleInBottomRight {
+    border: 20px solid transparent;
+    border-right: 20px solid #7E012E;
+    border-bottom: 20px solid #7E012E;
+  }
+  .triangleInTopRight {
+    border: 20px solid transparent;
+    border-top: 20px solid #7E012E;
+    border-right: 20px solid #7E012E;
+  }
+  .triangleInBottomLeft {
+    border: 20px solid transparent;
+    border-left: 20px solid #7E012E;
+    border-bottom: 20px solid #7E012E;
   }
 }
 /*# sourceMappingURL=style.css.map */
