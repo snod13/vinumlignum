@@ -366,7 +366,7 @@ img {
   max-width: 100%;
 }
 
-input, button {
+input, button, textarea {
   outline: none;
 }
 
@@ -1125,7 +1125,7 @@ input, button {
   padding-right: 0;
   font-size: 20px;
   border-radius: 5px;
-  border: none;
+  border: 2px solid #470128;
 }
 
 .order-form__input::-webkit-input-placeholder {
@@ -1142,6 +1142,18 @@ input, button {
 
 .order-form__input::placeholder {
   color: rgba(126, 1, 46, 0.6);
+}
+
+.order-form__input:focus {
+  border: 2px solid #F4E9D1;
+}
+
+.order-form__count {
+  margin-bottom: 0;
+}
+
+.order-form__valid {
+  width: 100%;
 }
 
 .order-form__btn {
@@ -1162,13 +1174,14 @@ input, button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
 
 .order-form__caption {
-  display: inline-block;
+  display: block;
   width: 50%;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 20px;
   margin-left: 10px;
 }
 
@@ -1179,6 +1192,7 @@ input, button {
   font-size: 20px;
   padding: 5px 10px;
   padding-right: 0;
+  border: 2px solid #470128;
 }
 
 .order-form__message::-webkit-input-placeholder {
@@ -1195,6 +1209,10 @@ input, button {
 
 .order-form__message::placeholder {
   color: rgba(126, 1, 46, 0.6);
+}
+
+.order-form__message:focus {
+  border: 2px solid #F4E9D1;
 }
 
 .order-form__addbtn {
@@ -1216,6 +1234,21 @@ input, button {
   overflow: hidden;
   position: absolute;
   z-index: -1;
+}
+
+@media (min-width: 992px) {
+  .order-form__block:hover {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+  .order-form__addbtn:hover {
+    background-color: #470128;
+    color: #ffffff;
+  }
+  .order-form__btn:hover {
+    -webkit-box-shadow: 0 0 10px rgba(71, 1, 40, 0.8);
+            box-shadow: 0 0 10px rgba(71, 1, 40, 0.8);
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1431,6 +1464,26 @@ input, button {
   }
   .footer__item img {
     max-width: 55px;
+  }
+}
+
+.invalid {
+  border: 2px solid red;
+  margin-bottom: 5px;
+}
+
+div.invalid {
+  border: none;
+  color: #ffffff;
+}
+
+.error {
+  width: 49%;
+}
+
+@media (max-width: 768px) {
+  .error {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

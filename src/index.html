@@ -301,16 +301,24 @@
           </div>
           <!-- /.order__offer -->
           <div class="order-form">
-            <form action="#">
+            <form action="#" id="form-order">
               <div class="order-form__block">
                 <h2 class="section__title order-form__title">
                   Оставьте заявку
                 </h2>
                 <div class="order-form__wrapper">
-                  <input type="text" class="order-form__input" placeholder="Имя">
-                  <input type="text" class="order-form__input" placeholder="Фамилия">
-                  <input type="tel" class="order-form__input" placeholder="+7(999)888-88-88">
-                  <input type="email" class="order-form__input" placeholder="E-mail">
+                  <div class="error">
+                  <input type="text" name="username" class="order-form__input order-form__valid" placeholder="Имя">
+                  </div>
+                  <div class="error">
+                  <input type="text" class="order-form__input order-form__valid" placeholder="Фамилия">
+                  </div>
+                  <div class="error">
+                  <input type="tel" name="userphone" id="phone" class="order-form__input order-form__valid" placeholder="+7(999)888-88-88">
+                  </div>
+                  <div class="error">
+                  <input type="email" name="usermail" class="order-form__input order-form__valid" placeholder="E-mail">
+                  </div>
 
                   <div class="order-form__counter">
                     <input type="number" name="count" id="count" class="order-form__input order-form__count"
@@ -326,6 +334,7 @@
               </div>
               <button class="button order-form__btn">Оставить заявку</button>
             </form>
+            <ul class="error" id="messageBox"></ul>
           </div>
           <!-- /.order__form -->
         </div>
@@ -387,6 +396,8 @@
   <!-- /.section footer -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/script.js"></script>
   <!-- <script src="js/modal.js"></script> -->
   <!-- <script>
