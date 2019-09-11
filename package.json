@@ -1,0 +1,31 @@
+{
+  "name": "vinumlignum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snod13/vinumlignum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snod13/vinumlignum/issues"
+  },
+  "homepage": "https://github.com/snod13/vinumlignum#readme",
+  "devDependencies": {
+    "@cedx/gulp-php-minify": "^10.1.0",
+    "esm": "^3.2.25",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-svgo": "^2.1.1",
+    "gulp-tinypng-compress": "^1.2.5",
+    "gulp-uglify": "^3.0.2"
+  }
+}
