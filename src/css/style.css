@@ -1430,11 +1430,17 @@ input, button, textarea {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .footer__first {
+    margin-bottom: 0px;
+  }
   .footer__secondary {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 10px;
   }
 }
@@ -1589,6 +1595,7 @@ div.invalid {
 
 .triangleInBottomLeft {
   position: absolute;
+  z-index: 10;
   bottom: 0;
   left: 0;
   border: 100px solid transparent;
