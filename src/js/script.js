@@ -50,6 +50,8 @@ $(document).ready(function(){
           $('.modal-message__text').text(data);
           $('#form-order').trigger('reset');
           $('.order-form__addbtn').html('Прикрепить файл');
+          ym(54620671, 'reachGoal', 'form-send');
+          return true;
         }
       });
     }
