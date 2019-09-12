@@ -44,6 +44,12 @@ gulp.task('move-js', function(cb) {
   cb();
 });
 
+gulp.task('move-ico', function(cb){
+  return gulp.src('./src/img/*.ico')
+    .pipe(gulp.dest('dist/img/'));
+  cb();
+});
+
 gulp.task('htmlmin', function (cb) {
   return gulp.src('./src/*.html')
     .pipe(htmlmin({
@@ -68,6 +74,6 @@ gulp.task('tinypng', function (cb) {
   cb();
 });
 
-gulp.task('build', gulp.parallel('minify-css', 'min-js', 'svg', 'move-js', 'fonts', 'htmlmin', 'compress:php', 'tinypng', function (cb) {
+gulp.task('build', gulp.parallel('minify-css', 'min-js', 'svg', 'move-ico', 'move-js', 'fonts', 'htmlmin', 'compress:php', 'tinypng', function (cb) {
   cb();
 }));

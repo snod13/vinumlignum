@@ -44,7 +44,9 @@ $(document).ready(function(){
       $.ajax({
         url: 'newmail.php',
         type: 'POST',
-        data: $(form).serialize(),
+        contentType: false,
+        processData: false,
+        data: new FormData(form),
         success: function (data) {
           modal.show();
           $('.modal-message__text').text(data);
