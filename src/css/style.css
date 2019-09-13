@@ -745,8 +745,8 @@ input, button, textarea {
 .hero__logo {
   z-index: 10;
   max-width: 235px;
-  -webkit-box-shadow: 0 0 10px rgba(244, 233, 209, 0.8);
-          box-shadow: 0 0 10px rgba(244, 233, 209, 0.8);
+  -webkit-box-shadow: 0 0 20px rgba(244, 233, 209, 0.9);
+          box-shadow: 0 0 20px rgba(244, 233, 209, 0.9);
 }
 
 .hero__logo img {
