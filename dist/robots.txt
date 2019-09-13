@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+#SnoD Web vk.com/snod_web
