@@ -345,12 +345,14 @@ template {
   font-family: 'MoolBoran V2';
   src: url("../fonts/MoolBoran V2.eot");
   src: url("../fonts/MoolBoran V2.eot?#iefix") format("embedded-opentype"), url("../fonts/MoolBoran V2.woff") format("woff"), url("../fonts/MoolBoran V2.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Source Sans Pro Semibold';
   src: url("../fonts/SourceSansPro-SemiBold.eot");
   src: url("../fonts/SourceSansPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-SemiBold.woff") format("woff"), url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+  font-display: swap;
 }
 
 .animated {
@@ -1741,9 +1743,7 @@ div.invalid {
   height: 100%;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

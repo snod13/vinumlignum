@@ -1,9 +1,8 @@
 // Работа с модальным окном
 var modal = $('#modal');
 var closeModal = $('#close');
-modal.hide();
 closeModal.click(function () {
-  modal.hide();
+  modal.removeClass('modal-active');
 });
 $(document).ready(function(){
   // Скрипт для вывода имени файла
@@ -48,7 +47,7 @@ $(document).ready(function(){
         processData: false,
         data: new FormData(form),
         success: function (data) {
-          modal.show();
+          modal.addClass('modal-active');
           $('.modal-message__text').text(data);
           $('.order-form__addbtn').html('Прикрепить файл');
           $('#form-order').trigger('reset');

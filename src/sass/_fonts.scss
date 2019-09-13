@@ -4,6 +4,7 @@
   src: url('../fonts/MoolBoran V2.eot?#iefix') format("embedded-opentype"),
     url('../fonts/MoolBoran V2.woff') format("woff"),
     url('../fonts/MoolBoran V2.ttf') format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
   src: url('../fonts/SourceSansPro-SemiBold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/SourceSansPro-SemiBold.woff') format('woff'),
     url('../fonts/SourceSansPro-SemiBold.ttf') format('truetype');
+  font-display: swap;
 }
 
 @mixin mainname {
