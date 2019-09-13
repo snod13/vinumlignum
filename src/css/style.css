@@ -1752,6 +1752,12 @@ div.invalid {
           align-items: center;
 }
 
+.modal-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .modal-message {
   position: relative;
   padding: 30px;
