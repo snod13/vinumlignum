@@ -15,6 +15,7 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
+
   <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54620671, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script><!-- /Yandex.Metrika counter -->
   <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
@@ -58,10 +59,10 @@
     <section class="section hero">
       <div class="container">
         <div class="hero__heading">
-          <div class="hero__logo">
+          <div class="hero__logo wow fadeInLeft">
             <img src="img/logo.svg" alt="Логотип">
           </div>
-          <h1 class="hero__title">«VINUM LIGNUM»</h1>
+          <h1 class="hero__title wow fadeInRight">«VINUM LIGNUM»</h1>
           <!-- /.hero__title -->
         </div>
         <!-- /.hero__heading -->
@@ -77,17 +78,20 @@
             — Изготовление из дерева/фанеры/МДФ
           </li>
           <li class="hero-list__item">
-            — Просчет в день отправления заявки
+            — Стоимость от 400 до 1200 рублей
           </li>
           <li class="hero-list__item">
             — Изготовление партиями от&nbsp;1&nbsp;до&nbsp;100&nbsp;000&nbsp;экземпляров
+          </li>
+          <li class="hero-list__item">
+            — Доставка по тарифам курьерских служб
           </li>
           <li class="hero-list__item">
             — Бесплатная доставка партий от&nbsp;1000&nbsp;экземпляров
           </li>
         </ul>
         <!-- /.hero-list -->
-        <a href="#contact" class="button hero__btn" onclick="ym(54620671, 'reachGoal', 'go-button'); return true;">
+        <a href="#contact" class="button hero__btn wow zoomIn" onclick="ym(54620671, 'reachGoal', 'go-button'); return true;">
           Оставить заявку
         </a>
       </div>
@@ -107,7 +111,7 @@
         </p>
         <!-- /.about__text -->
         <div class="about-quality">
-          <div class="about-quality__item">
+          <div class="about-quality__item wow fadeInUp" data-wow-delay="0.1s">
             <div class="about-quality__img">
               <img src="img/about/world.svg" alt="Глобус">
             </div>
@@ -116,7 +120,7 @@
             </p>
           </div>
           <!-- /.about-quality__item -->
-          <div class="about-quality__item">
+          <div class="about-quality__item wow fadeInUp" data-wow-delay="0.2s">
             <div class="about-quality__img">
               <img src="img/about/money.svg" alt="Монеты">
             </div>
@@ -125,7 +129,7 @@
             </p>
           </div>
           <!-- /.about-quality__item -->
-          <div class="about-quality__item">
+          <div class="about-quality__item wow fadeInUp" data-wow-delay="0.3s">
             <div class="about-quality__img">
               <img src="img/about/part.svg" alt="Партии">
             </div>
@@ -134,7 +138,7 @@
             </p>
           </div>
           <!-- /.about-quality__item -->
-          <div class="about-quality__item">
+          <div class="about-quality__item wow fadeInUp" data-wow-delay="0.4s">
             <div class="about-quality__img">
               <img src="img/about/task.svg" alt="Планшет с заданиями">
             </div>
@@ -143,7 +147,7 @@
             </p>
           </div>
           <!-- /.about-quality__item -->
-          <div class="about-quality__item">
+          <div class="about-quality__item wow fadeInUp" data-wow-delay="0.5s">
             <div class="about-quality__img">
               <img src="img/about/clock.svg" alt="Часы">
             </div>
@@ -152,7 +156,7 @@
             </p>
           </div>
           <!-- /.about-quality__item -->
-          <div class="about-quality__item">
+          <div class="about-quality__item wow fadeInUp" data-wow-delay="0.6s">
             <div class="about-quality__img">
               <img src="img/about/car.svg" alt="Машина">
             </div>
@@ -211,7 +215,7 @@
           F.A.Q.
         </h2>
         <!-- /.section__title faq__title -->
-        <ul class="faq-list">
+        <ul class="faq-list wow fadeInUp">
           <li class="faq-list__item">
             Какой срок изготовления одной коробки?
             <p class="faq-list__description">
@@ -281,7 +285,7 @@
     <div class="triangeInTopLeft"></div>
       <div class="container">
         <div class="order-block">
-          <div class="order-offer">
+          <div class="order-offer wow fadeInLeft">
             <h2 class="section__title order-offer__title">
               При заказе от&nbsp;1000 коробов скидка 25%
             </h2>
@@ -290,7 +294,7 @@
             </div>
           </div>
           <!-- /.order__offer -->
-          <div class="order-form">
+          <div class="order-form wow fadeIn">
             <form method="post" id="form-order" enctype="multipart/form-data">
               <div class="order-form__block">
                 <h2 class="section__title order-form__title">
@@ -337,8 +341,8 @@
   </main>
   <footer class="section footer">
     <div class="container">
-      <h2 class="section__title footer__title">Оставайтесь с нами на&nbsp;связи</h2>
-      <div class="footer-block">
+      <h2 class="section__title footer__title wow fadeInUp">Оставайтесь с нами на&nbsp;связи</h2>
+      <div class="footer-block wow fadeInUp">
         <div class="footer__row footer__first">
           <a href="mailto:order@vinumlignum.ru" class="footer__item">
             <div class="footer__img">
@@ -396,8 +400,10 @@
   <script src="js/swiper.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
   <script>
+    new WOW().init();
     //initialize swiper when document ready
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',

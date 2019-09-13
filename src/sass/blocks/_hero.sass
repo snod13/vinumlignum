@@ -12,8 +12,9 @@
     align-items: center
   &__title
     margin: 0
+    margin-top: 60px
     margin-left: 15px
-    font-size: 110px
+    font-size: 135px
     font-weight: 100
     +mainname
     color: $white
@@ -21,11 +22,12 @@
   &__logo
     z-index: 10
     max-width: 235px
+    box-shadow: 0 0 10px rgba($light-color, 0.8)
     img
       display: block
   &__text
     margin: 0
-    margin-top: 10px
+    margin-top: 15px
     max-width: 1000px
     font-size: 70px
     color: $white
@@ -47,11 +49,13 @@
     font-size: 34px
     text-decoration: none
     background-color: $light-wine
+    box-shadow: 0 0 20px rgba($white, 0.8)
 @media (min-width: 992px)
   .hero
     &__btn
       &:hover
-        box-shadow: 0 0 20px rgba($white, 0.8)
+        background-color: lighten($light-wine, 5)
+        box-shadow: 0 0 20px rgba(lighten($light-wine, 15), 0.9)
 @media (max-width: 1200px)
   .hero
     &__logo
