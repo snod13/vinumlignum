@@ -754,7 +754,7 @@ input, button, textarea {
 .hero__text {
   margin: 0;
   margin-top: 15px;
-  max-width: 1000px;
+  max-width: 1010px;
   font-size: 70px;
   color: #ffffff;
   line-height: 0.9;
@@ -833,6 +833,7 @@ input, button, textarea {
     max-width: 100px;
   }
   .hero__title {
+    margin-top: 40px;
     font-size: 60px;
   }
   .hero__text {
@@ -851,11 +852,12 @@ input, button, textarea {
   }
 }
 
-@media (max-width: 474px) {
+@media (max-width: 490px) {
   .hero__logo {
     max-width: 70px;
   }
   .hero__title {
+    margin-top: 30px;
     font-size: 45px;
   }
   .hero__text {
@@ -868,7 +870,7 @@ input, button, textarea {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 347px) {
   .hero {
     padding-top: 70px;
   }
@@ -879,6 +881,9 @@ input, button, textarea {
     text-align: center;
     margin: auto;
     margin-bottom: 0;
+  }
+  .hero__text {
+    margin-top: 0;
   }
 }
 
