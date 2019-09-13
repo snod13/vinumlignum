@@ -8,7 +8,7 @@ var svgo = require('gulp-svgo');
 
 import {phpMinify} from '@cedx/gulp-php-minify';
 
-gulp.task('compress:php', () => gulp.src('./src/*.php', {read: false})
+gulp.task('compress:php', () => gulp.src('./src/**/*.php', {read: false})
   .pipe(phpMinify())
   .pipe(gulp.dest('dist/'))
 );
@@ -66,7 +66,7 @@ gulp.task('fonts', function (cb) {
 });
 
 gulp.task('tinypng', function (cb) {
-  gulp.src('./src/img/**/*.{png,jpg,jpeg,svg}')
+  gulp.src('./src/img/**/*.{png,jpg,jpeg}')
     .pipe(tinyPNG({
       key: 'd979w94GHP9qsmy2rwKJs1XMrNRNvD7g'
     }))
