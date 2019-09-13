@@ -1,11 +1,11 @@
-$(document).ready(function(){
-  // Работа с модальным окном
-  var modal = $('#modal');
-  var closeModal = $('#close');
+// Работа с модальным окном
+var modal = $('#modal');
+var closeModal = $('#close');
+modal.hide();
+closeModal.click(function () {
   modal.hide();
-  closeModal.click(function(){
-    modal.hide();
-  });
+});
+$(document).ready(function(){
   // Скрипт для вывода имени файла
   document.getElementById('myfile').onchange = function () {
     var fileName = $('#myfile').val().split('/').pop().split('\\').pop();
