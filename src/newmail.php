@@ -16,6 +16,7 @@ $name = $_POST['username'];
 $surname = $_POST['usersurname'];
 $email = $_POST['usermail'];
 $phone = $_POST['userphone'];
+$model = $_POST['model'];
 $count = $_POST['count'];
 $message = $_POST['message'];
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -54,6 +55,7 @@ if (!empty($_FILES['myfile']['name'][0])) {
         $mail->Body    = "<b>Имя:</b> $name $surname<br>
         <b>Почта:</b> $email<br><br>
         <b>Телефон:</b> $phone<br>
+        <b>Модель:</b> $model<br>
         <b>Кол-во:</b> $count<br>
         <b>Доп. описание:</b> $message";
 // Проверяем отравленность сообщения
